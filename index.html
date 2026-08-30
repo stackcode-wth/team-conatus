@@ -9,12 +9,12 @@
 </head>
 <body>
     <header class="navbar">
-        <a href="#home" class="logo">MANSI</a>
+        <a href="#home" class="logo">MANSI☆</a>
 
         <nav>
             <a href="#home">Home</a>
             <a href="#about">About</a>
-            <a href="skills">Skills</a>
+            <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
             <a href="#education">Education</a>
             <a href="#contact">Contact</a>
@@ -22,32 +22,49 @@
 
     </header>
 
+
+    <!--home-->
     <section id="home" class="hero">
-        <div class="hero content">
-            <h1>HI THERE, I am <span> Mansi singh </span></h1>
-            <p class="hero description">I am a web developer and designer. I create beautiful and functional websites that help businesses grow online.</p>
+        <div class="hero-content">
+            <p class="small-heading">
+                WELCOME TO MY PORTFOLIO
+            </p>
+            <h1>
+                Hi there, I'm
+                <span>Mansi Singh</span>
+            </h1>
+            <p class="hero-description">
+                Frontend Developer and Designer who loves bringing ideas to life through code and creativity. I enjoy building clean websites, exploring UI/UX, and turning simple concepts into meaningful digital experiences.
+            </p>
 
-            <div class="hero buttons">
-                <a href="#projects" class="btn primary-btn">View My Work</a>
-                <a href="#contact" class="btn secondary-btn">Contact Me</a>
-            </div>     
-        </div>
-
-
-        <div class="profile-card">
-            <div class="profile-image">
-                <img src="profile.jpg" alt="Profile Image">
+            <div class="hero-buttons">
+                <a href="#projects" class="btn primary-btn">
+                    My Work
+                </a>
+                <a href="#contact" class="btn secondary-btn">
+                    Contact Me
+                </a>
             </div>
         </div>
-    </section>
 
+       <!--profilecard-->
+       <div class="profile-card">
+        <div class="profile-image">
+            <img src="manc.jpeg" alt="profile image">
+            <div>
 
+            </div>
+            <p>Frontend Developer & Designer</p>
+        </div>
+       </div>
+       </section>
+
+<!--aboutme-->
     <section id="about" class="section">
 
-        <div class="section content">
-            <h2>About Me</h2>
-            <p>A LITTLE ABOUT ME</p>
-
+        <div class="section-title">
+            <p class="small-heading">A LITTLE ABOUT ME</p>
+             <h2>About Me</h2>
             <div class="line"></div>
         </div>
         
@@ -76,18 +93,17 @@
     </section>
 
 
+    <!--skills-->
     <section id="skills" class="section skills-section">
         <div class="section-title">
-            <h2>Skills</h2>
-            <p>MY TECHNICAL SKILLS</p>
+            <p class="small-heading">MY TECHNICAL SKILLS</p>
+             <h2>Skills</h2>
             <div class="line"></div>
-            <p class="section-description">
-              My toolkit for crafting calm, thoughtful and
-                beautifully detailed digital experiences. 
+            <p class="section-description"> 
             </p>
         </div>
 
-      <div class="skill-container">
+      <div class="skills-container">
 
         <div class="skill-card">
             <span>HTML</span>
@@ -108,17 +124,16 @@
 
     </section>
 
-    <section id="projects" class="project-section">
+
+    <!--projects-->
+    <section id="projects" class="projects-section">
         <div class="section-title">
-            <h2>Projects</h2>
-            <p>MY WORK</p>
+            <p class="small-heading">MY WORK</p>  
+              <h2>Projects</h2> 
             <div class="line"></div>
-            <p class="section-description">
-                A showcase of my work, highlighting my skills and experience in web development and design.
-            </p>
         </div>
 
-        <div class="project-container"></div> 
+        <div class="projects-container"></div> 
 
        <!--project1--> 
        <div class="project-card">
@@ -127,12 +142,12 @@
         <p>A personal portfolio website to showcase my skills, projects, and experience as a web developer and designer.</p>
 
         <div class="tags">
-            <span class="tag">HTML</span>
-            <span class="tag">CSS</span>
-            <span class="tag">Responsive</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>Responsive</span>
         </div>
 
-        <a href="#" class="project-link">View Project   </a>
+        <a href="#" class="projects-link">View Project   </a>
        </div>
 
        <!--project2-->
@@ -142,12 +157,12 @@
         <p>A web application which kinda quiz about pokemon and its type using pokeapi</p>
 
         <div class="tags">
-            <span class="tag">HTML</span>
-            <span class="tag">CSS</span>
-            <span class="tag">JavaScript</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
        </div>
 
-       <a href="https://stackcode-wth.github.io/Pokemon-type-matcher/" class="project-link">view project</a>
+       <a href="https://stackcode-wth.github.io/Pokemon-type-matcher/" class="projects-link">view project</a>
        </div>
 
 
@@ -157,21 +172,22 @@
    <!--education --> 
    <section id="education" class="section">
     <div class="section-title">
-        <h2>Education</h2>
-            <p>MY EDUCATION</p>
+            <p class="small-heading">My learning journey</p>
+             <h2>Education</h2>
             <div class="line"></div>
-            <p class="section-description">
-                My education and learning journey
-            </p>
-
+           
     </div>
 
     <div class="timeline">
-        <div clas="timeline-item">
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
             <div class="timeline-content">
-                <span class="date">2025 - present</span>
+                <span class="date">
+                    2025 - present
+            </span>
                 <h3>Bachelor of Technology in Computer Science</h3>
-                <p>Currently pursuing B.Tech in Computer Science from AJAY KUMAR GARG ENGINEERING COLLEGE, focusing on web development and software engineering.</p>
+                <p class="college"> AJAY KUMAR GARG ENGINEERING COLLEGE.</p>
+                <p>Currently pursuing B.Tech in Information technology, learning programming, web development , ui/ux design and animations</p>
             </div>
         </div>
 
@@ -180,23 +196,26 @@
             <div class="timeline-content">
                 <span class="date">2023-2024</span>
                 <h3>Intermediate (12th)</h3>
-                <p>Completed Intermediate (12th) from THE ARYAN INTERNATIONAL SCHOOL, with a focus on Science and Mathematics, laying the foundation for my future studies in Computer Science.</p>
+                <p class="college">THE ARYAN INTERNATIONAL SCHOOL.</p>
+                <p>Completed Intermediate (12th) with a focus on Science and Mathematics, laying the foundation for my future studies in Computer Science </p>
         </div>
 
     </div>
-   </section>
+
+</div>
+</section>
+
 
    <!--CONTACT-->
 
-<section id="contact" class="contact-section">
-    <div class="contact-content">
-        <h2>Contact Me</h2>
-        <p> Let's Bloom Together</p>
-        <div class="line"></div>
-        <p class="section-description">
-            I am always open to discussing new projects, creative ideas, or opportunities to be part of your visions. Feel free to reach out to me through the contact form below.
-        </p>
 
+   <section id="contact" class="contact-section">
+    <div class="contact-content">
+        <p class="small-heading"> Let's Bloom Together</p>
+         <h2>Contact Me</h2>
+    
+        <div class="contact-info">
+ 
         <p>
             <strong>EMAIL</strong>
             123mansee@gmail.com
@@ -211,30 +230,27 @@
             <strong>LOCATION</strong>
             Delhi, India
         </p>
-
+        </div>
 
         <div class="social-buttons">
-             <a href="https://www.linkedin.com/in/mansi-singh-58b7a5393/"
-       target="_blank"
-       class="social-btn">
-        LinkedIn
-        </a>
-
+                <a href="https://www.linkedin.com/in/mansi-singh-58b7a5393" class="btn primary-btn">
+                    LINKEDIN
         
- <a href="https://github.com/stackcode-wth"
-       target="_blank"
-       class="social-btn">
-        GitHub
-    </a>
+                </a>
+                <a href="https://github.com/stackcode-wt" class="btn secondary-btn">
+                    GITHUB
+                </a>
+            </div>
 
 </div>
+</div>
 
-    </div>
+
 
     <!--CONTACTFORM-->
 
     <form class="contact-form">
-        <div class="form-row">>
+        <div class="form-row">
             <input type="text" placeholder="YOUR NAME">
             <input type="email" placeholder="YOUR EMAIL">
             <textarea placeholder="YOUR MESSAGE"></textarea>
