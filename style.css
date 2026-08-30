@@ -110,7 +110,7 @@ h1,h2,h3{
 }
 
 .hero h1 span{
-    color: #091c5c;
+    color: rgb(40, 2, 253);
 }
 
 .hero-description{
@@ -405,23 +405,23 @@ h1,h2,h3{
 
 .date{
     color:#2007c1;
-    font-size: 10px;
+    font-size: 17px;
     letter-spacing:3px;
 }
 
 .timeline-content h3{
     color:#eeebfa;
-    font-size:25px;
+    font-size:30px;
     margin:7px;
 }
 
 .timeline-content p {
     color:#acb4cf;
-    font-size: 12px;
+    font-size: 15px;
 }
 
 .timeline-content .college{
-    color:#2007c1;
+    color: rgb(40, 2, 253);
 }
 
 
