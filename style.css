@@ -478,10 +478,6 @@ textarea {
     resize: vertical;
 }
 
-input:focus,textarea:focus {
-    border-color: #180258;
-}
-
 .contact-form .btn {
     width: 100%;
     border:none;
