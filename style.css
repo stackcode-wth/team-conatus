@@ -468,7 +468,6 @@ input,textarea {
     margin-bottom: 12px;
     border-radius: 12px;
     border: 1px solid #180258;
-    outline: none;
     background: rgba(255,255,255,0.03);
     color: #2d0a97;
     font-family: 'Inter', sans-serif;
