@@ -53,7 +53,6 @@ h1,h2,h3{
     backdrop-filter: blur(16px);
     border: 1px solid rgba(52, 44, 102, 0.1);
     border-radius: 20px;
-    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.4);
 }
 
 .logo{
