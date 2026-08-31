@@ -126,7 +126,6 @@ h1,h2,h3{
 }
 
 .btn{
-    display: inline-block;
     padding: 12px 25px;
     border-radius: 30px; 
     font-size: 16px;
