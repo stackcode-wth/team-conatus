@@ -1,6 +1,6 @@
 # Personal Portfolio
 
-A responsive personal portfolio website built with HTML and CSS.
+A personal portfolio website built with HTML and CSS.
 
 ## Sections
 - Home
