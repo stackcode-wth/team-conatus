@@ -12,10 +12,10 @@
 body{
     background:
       radial-gradient(circle at 100% 1%, #31231c,
-      transparent 25rem
+      transparent 20rem
       ),
 
-      radial-gradient(circle at 10% 10%, #2e1f18,
+      radial-gradient(circle at 10% 15%, #2e1f18,
       transparent 30rem
       ),
 
@@ -27,7 +27,7 @@ body{
       transparent 35rem
       ),
 
-      radial-gradient(circle at 100% 87%, #3b2a22,
+      radial-gradient(circle at 100% 85%, #3b2a22,
       transparent 30rem
       ),
 
@@ -193,7 +193,7 @@ h1,h2,h3{
     background: #3b2a22;
     color: #ffffff;
     border:2px solid #7b593e;
-    box-shadow: 0 10px 35px #81593d;
+    box-shadow: 0 10px 35px #553a27;
 }
 
 .secondary-btn{
@@ -215,7 +215,7 @@ h1,h2,h3{
     text-align: center;
     border-radius: 30px;
     border: 2px solid #7a553a;
-    background: #3c2b22d9;
+    background: #3f2c22d9;
     backdrop-filter: blur(16px);
     box-shadow: 0 10px 45px #3b2a22;
 
@@ -430,7 +430,7 @@ h1,h2,h3{
 
 /*education*/
 .timeline{
-    max-width: 750px;
+    max-width: 870px;
     margin: auto;
     padding-left: 35px;
     border-left: 2px solid #432b1b;
@@ -455,13 +455,14 @@ h1,h2,h3{
 
 .date{
     color:#3b2a22;
+    top: 50px;
     font-size: 20px;
     font-weight:bolder;
     letter-spacing:3px;
 }
 
 .timeline-content h3{
-    color:#eeebfa;
+    color:#ffffff;
     font-size: 35px;
     margin:7px;
 }
@@ -493,6 +494,7 @@ h1,h2,h3{
 .contact-content h2 {
     font-size: 60px;
     margin-bottom: 18px;
+    color: #2d1e18;
 }
 
 .contact-content p {
@@ -508,7 +510,7 @@ h1,h2,h3{
 }
 
 .contact-info p{
-    color:#e8ebf5;
+    color:#030303;
 }
 
 .contact-form {
