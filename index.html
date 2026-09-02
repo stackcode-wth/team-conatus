@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=deive-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MANSI'S Portfolio</title>
     <link rel="stylesheet" href="style.css">
 
@@ -11,6 +11,13 @@
     <header class="navbar">
         <a href="#home" class="logo">MANSI.</a>
 
+        <input type="checkbox" id="nav-toggle-checkbox" class="nav-toggle-checkbox">
+        <label for="nav-toggle-checkbox" class="nav-toggle" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
         <nav>
             <a href="#home">Home</a>
             <a href="#about">About</a>
@@ -18,6 +25,7 @@
             <a href="#projects">Projects</a>
             <a href="#education">Education</a>
             <a href="#contact">Contact</a>
+            <a href="Mansi_Resume.pdf" download class="nav-resume-btn">Resume</a>
         </nav>
 
     </header>
@@ -34,7 +42,8 @@
                 <span>Mansi</span>
             </h1>
             <p class="hero-description">
-                Frontend Developer and Designer who loves bringing ideas to life through code and creativity. I enjoy building clean websites, exploring UI/UX, and turning simple concepts into meaningful digital experiences.
+                Frontend Developer and Designer  <br>
+                Crafting intuitive, performant and visually engaging web interfaces is my craft. As a frontend-first developer, I leverage modern frameworks and clean architecture to turn ideas into lightning-fast digital products that actually solve problems .
             </p>
 
             <div class="hero-buttons">
@@ -43,6 +52,9 @@
                 </a>
                 <a href="#contact" class="btn secondary-btn">
                     Contact Me
+                </a>
+                <a href="Mansi_Resume.pdf" download class="btn secondary-btn">
+                    Download Resume
                 </a>
             </div>
         </div>
@@ -63,8 +75,9 @@
     <section id="about" class="section">
 
         <div class="section-title">
-            <p class="small-heading">A LITTLE ABOUT ME</p>
-             <h2>About Me</h2>
+            <h2>About Me</h2>
+            <p class="small-heading">The person behind the pixels and code</p>
+             
             <div class="line"></div>
         </div>
         
@@ -96,8 +109,9 @@
     <!--skills-->
     <section id="skills" class="section skills-section">
         <div class="section-title">
-            <p class="small-heading">MY TECHNICAL SKILLS</p>
-             <h2>Skills</h2>
+            <h2>Skills</h2>
+            <p class="small-heading">The tools and tech stack I use to bring ideas to life</p>
+             
             <div class="line"></div>
             <p class="section-description"> 
             </p>
@@ -107,27 +121,27 @@
 
         <div class="skill-card">
             <span>HTML</span>
-            <small>Structure</small>
+        
         </div>
 
         <div class="skill-card">
             <span>CSS</span>
-            <small>Styling</small>
+        
         </div>
 
         <div class="skill-card">
             <span>C/C++</span>
-            <small>Programming</small>
+          
         </div>
 
           <div class="skill-card">
             <span>FIGMA</span>
-            <small>Designing</small>
+           
         </div>
 
          <div class="skill-card">
             <span>ANIMATION</span>
-            <small>Animate little things</small>
+            
         </div>
 
           
@@ -140,8 +154,9 @@
     <!--projects-->
     <section id="projects" class="projects-section">
         <div class="section-title">
-            <p class="small-heading">MY WORK</p>  
-              <h2>Projects</h2> 
+            <h2>Projects</h2> 
+            <p class="small-heading">A selection of things I've built and shipped</p>  
+              
             <div class="line"></div>
         </div>
 
@@ -159,14 +174,14 @@
             <span>Responsive</span>
         </div>
 
-        <a href="#home" class="projects-link">View Project   </a>
+        <a href="https://github.com/stackcode-wth/team-conatus" class="projects-link">View Project On Github   </a>
        </div>
 
        <!--project2-->
        <div class="project-card">
         <span class="project-number">02</span>
         <h3>Pokemon type Matcher</h3>
-        <p>A web application which kinda quiz about pokemon and its type using pokeapi</p>
+        <p>n interactive web application that calculates and visualizes type effectiveness, weaknesses, and resistances for any Pokémon combination.</p>
 
         <div class="tags">
             <span>HTML</span>
@@ -174,7 +189,7 @@
             <span>JavaScript</span>
        </div>
 
-       <a href="https://stackcode-wth.github.io/Pokemon-type-matcher/" class="projects-link">view project</a>
+       <a href="https://github.com/stackcode-wth/Pokemon-type-matcher" class="projects-link">View Project On Github</a>
        </div>
        </div> 
 
@@ -185,8 +200,9 @@
    <!--education --> 
    <section id="education" class="section">
     <div class="section-title">
-            <p class="small-heading">My learning journey</p>
-             <h2>Education</h2>
+        <h2>Education</h2>
+            <p class="small-heading">The academic foundations behind my technical skills</p>
+             
             <div class="line"></div>
            
     </div>
@@ -259,11 +275,11 @@
 
 
     <!--CONTACTFORM-->
-    <form class="contact-form">
+    <form class="contact-form" action="https://formspree.io/f/xzdnpeqk" method="POST">
         <div class="form-row">
-            <input type="text" placeholder="YOUR NAME">
-            <input type="email" placeholder="YOUR EMAIL">
-            <textarea placeholder="YOUR MESSAGE"></textarea>
+            <input type="text" name="name" placeholder="YOUR NAME" required>
+            <input type="email" name="email" placeholder="YOUR EMAIL" required>
+            <textarea name="message" placeholder="YOUR MESSAGE" required></textarea>
         </div>
 
         <button type="submit" class="btn primary-btn"> Lets discuss the idea :0</button>
@@ -271,31 +287,46 @@
 </section>
 
 <!--footer-->
+<footer class="site-footer">
+  <div class="footer-container">
+    
 
-<footer class="footer">
-    <div class="footer-content">
-        <h2 class="footer-logo">MANSI</h2>
-        <p class="footer-tagline">
-            Building, learning, and creating one project at a time.
-        </p>
-        <nav class="footer-nav">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
-        <div class="footer-socials">
-            <a href="https://github.com/stackcode-wth" target="_blank">GitHub</a>
-            <a href="https://www.linkedin.com/in/mansi-singh-58b7a5393" target="_blank">LinkedIn</a>
-            <a href="https://www.instagram.com/manc.singh/" target="_blank">Instagram</a>
-        </div>
-        <div class="footer-divider"></div>
-
-        <p class="copyright">
-            © 2026 Mansi • Made with HTML, CSS 
-        </p>
+    <div class="footer-col brand-col">
+      <h2>Mansi.</h2>
+      <p class="tagline">Learn | Build | Enjoy </p>
+      <div class="subscribe-box">
+        <h3>Let's build something together</h3>
+        
+      </div>
     </div>
+
+    <!-- Quick Links -->
+    <div class="footer-col links-col">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about me">About us</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+
+    <!--Contact Us -->
+    <div class="footer-col contact-col">
+      <h3>Contact Us</h3>
+      <p><i class="icon-phone"></i> +91 9999 999 999</p>
+      <p><i class="icon-mail"></i> 123mansee@gmail.com</p>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/mansi-singh-58b7a5393/"><i class="linkedin"></i>L</a>
+        <a href="https://www.instagram.com/manc.singh/"><i class="icon-instagram"></i>I</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>2026 © company.Ltd. | All Rights Reserved | Mansi singh</p>
+  </div>
 </footer>
 
 </body>
