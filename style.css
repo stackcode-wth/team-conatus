@@ -758,6 +758,10 @@ textarea {
     .timeline-dot {
         left: -33px;
     }
+
+    .contact-form {
+        padding: 20px;
+    }
 }
 
 /* Small phones */
