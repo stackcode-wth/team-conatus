@@ -15,14 +15,6 @@ body{
       transparent 20rem
       ),
 
-      radial-gradient(circle at 10% 15%, #2e1f18,
-      transparent 30rem
-      ),
-
-      radial-gradient(circle at 90% 37%, #38261d,
-        transparent 30rem
-        ),
-
       radial-gradient(circle at 10% 62%, #32211a,
       transparent 35rem
       ),
@@ -353,6 +345,62 @@ h1,h2,h3{
     color:#ffffff;
 }
 
+/*coding profiles*/
+.coding-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+ 
+.coding-card{
+    display: block;
+    padding: 32px;
+    text-align: center;
+    border: 2px solid #7a553a;
+    border-radius: 20px;
+    background: #3b2a22e2;
+    box-shadow: 0 10px 25px #3b2a22;
+    backdrop-filter: blur(15px);
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+ 
+.coding-card:hover{
+    transform: translateY(-7px);
+    box-shadow: 0 10px 30px #080808;
+    border-color: #d5ad90;
+}
+ 
+.coding-card .icon{
+    width: 45px;
+    height: 45px;
+    margin: auto auto 15px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    color: #3b2a22;
+    background: #7a553a;
+    font-size: 20px;
+}
+ 
+.coding-card h3{
+    font-size: 25px;
+    margin-bottom: 12px;
+    color: #ffffff;
+}
+ 
+.coding-card p{
+    color: #dbb89f;
+    font-size: 15px;
+    margin-bottom: 16px;
+}
+ 
+.coding-link{
+    color: #ac8060;
+    font-size: 15px;
+    font-weight: 600;
+}
+ 
 /*projects*/
 .projects-section{
     padding:105px 5% ;
@@ -425,9 +473,6 @@ h1,h2,h3{
     color:#ffffff;
     font-size:16px;
 }
-
-
-
 /*education*/
 .timeline{
     max-width: 870px;
@@ -634,10 +679,14 @@ textarea {
   color: #fcfcfc;
 }
 
-/* responsive*/
+/*responsive*/
 @media (max-width: 1024px) {
 
     .about-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .coding-container {
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -676,8 +725,6 @@ textarea {
         flex-wrap: wrap;
     }
 }
-
-/* Mobile */
 @media (max-width: 768px) {
 
     .navbar {
@@ -734,6 +781,10 @@ textarea {
         grid-template-columns: 1fr;
     }
 
+    .coding-container {
+        grid-template-columns: 1fr;
+    }
+
     .skills-container {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -761,10 +812,13 @@ textarea {
 
     .contact-form {
         padding: 20px;
+        height: auto;
+        width: 100%;
+        
     }
-}
+    }
 
-/* Small phones */
+/*phones*/
 @media (max-width: 480px) {
 
     .hero h1 {
@@ -810,4 +864,6 @@ textarea {
     .contact-section {
         padding: 70px 0;
     }
+
+   
 }
